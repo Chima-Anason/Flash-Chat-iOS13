@@ -29,6 +29,7 @@ class RegisterViewController: UIViewController {
                     
                     print(e.localizedDescription)
                 }else{
+                    //Navigate to the ChatViewController
                     self.performSegue(withIdentifier: "RegisterToChat", sender: self)
                 }
             }
