@@ -7,8 +7,8 @@ target 'Flash Chat iOS13' do
   
   # Pods for Flash Chat iOS13
   pod 'CLTypingLabel'
-  pod 'FirebaseFirestore', '~>8.15.0'
-  pod 'FirebaseAuth', '~>8.15.0'
+  pod 'FirebaseFirestore', '~> 8.15.0'
+  pod 'FirebaseAuth', '~> 8.15.0'
 
 
 end
