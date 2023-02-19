@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseCore
 import FirebaseFirestore
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let db = Firestore.firestore()
         print(db)
+        
+        //Makes the TextField section pop on top of the keyboard
+        IQKeyboardManager.shared.enable = true
+        
+        //Removes the extra auto tool bar on the keyboard
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        
+        //Tap anywhere outside the textfield the keyboard will disappear
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         return true
     }
 
